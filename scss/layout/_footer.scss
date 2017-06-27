@@ -1,0 +1,47 @@
+/*Footer Styles-----------------------------------*/
+
+footer {
+	border-top: solid 1px $color-footer-border;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	margin: 30px auto 15px;
+	width: 95%;
+}
+
+footer p {
+	@include text(1.06em, 1.4, normal, $color-text);
+	float: left;
+	margin-top: 15px
+		
+		
+}
+
+footer a {
+	float: right;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+#footer-nav {
+	display: none;
+	
+	@media #{$brk-medium} {
+			display: inline;
+	}
+} 
+
+#footer-nav a {
+	
+	@media #{$brk-medium} {
+			margin-left: 20px;
+	}
+}
+
+#back {
+	
+	@media #{$brk-medium} {
+			display: none;
+	}
+}
+
+

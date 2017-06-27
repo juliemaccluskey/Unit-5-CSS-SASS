@@ -1,0 +1,132 @@
+/*Skills Styles-----------------------------------*/
+
+#skills {
+	@extend %clearfix;
+	@extend %clearfixBoth;
+	@extend %centered;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+	
+		li {
+
+		background: $color-button;
+		width: 130px;
+		display: inline-block;
+		padding: 5px;
+		margin: 0px 5px 15px;
+		border-radius: 15%
+
+		}
+}
+
+
+/*Portfolio Styles-----------------------------------*/
+
+#portfolio-wrap {
+	@extend %clearfix;
+	@extend %clearfixBoth;
+	@extend %centered;
+	background: $color-portfolio;
+	padding: 1.25em;
+	max-width: 1250px;
+	margin: auto;
+	clear: both;
+	
+	@media #{$brk-medium} {
+			clear: both;
+	}
+	
+	@media #{$brk-wide} {
+			width: 100%;
+	}
+	
+}
+
+#wrapper {
+	
+	@media #{$brk-medium} {
+			width: 100%;
+			margin-top: 35px;
+	}
+}
+
+#wrapper li {
+	
+	@media #{$brk-medium} {
+			float: left;
+			width: 50%;
+			padding-left: 2%;
+			padding-right: 2%
+	}
+	
+	@media #{$brk-wide} {
+			width: 33.333%;
+	}
+	
+}
+
+#wrapper li:nth-child(3) {
+		
+	@media #{$brk-medium} {
+			clear: left;
+	}
+	
+	@media #{$brk-wide} {
+			clear: none;
+	}
+}
+
+li p {
+	
+	@include text(1.06em, 1.4, normal, $color-text);
+}
+
+
+/*Contact Styles-----------------------------------*/
+
+#contact-wrap {
+	
+	@extend %centered;
+	
+	h2 {
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+	
+	@media #{$brk-medium} {
+			width: 70%;
+			margin: auto;
+			clear: both;
+	}
+	
+	@media #{$brk-wide} {
+			width: 50%;
+			margin-bottom: 50px;
+			margin-top: 50px;
+	}
+}
+
+
+
+#contact-wrap p {
+	
+	@include text(1.06em, 1.4, normal, $color-text);
+	
+	@media #{$brk-wide} {
+			font-size: 1.2em;
+	}	
+}
+
+
+#phone p,
+#email p {
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+

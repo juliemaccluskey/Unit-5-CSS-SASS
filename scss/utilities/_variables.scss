@@ -1,0 +1,25 @@
+
+//Colors Descriptive
+
+$pewter			:  #b2ada8;
+$cyan			:  #36acd0;
+$chocolate		:  #312d2a;
+$soft-yellow	:  #f5d895;
+$almost-white	:  #ededed;
+
+
+//Colors Functional
+
+$color-main					:  $pewter;
+$color-hover				:  $cyan;
+$color-text					:  $chocolate;
+$color-button				:  $soft-yellow;
+$color-portfolio			:  $almost-white;
+$color-footer-border		:  rgba($chocolate, .8);
+$color-nav-background		:  rgba($chocolate, .2);
+
+
+//Media Queries
+
+$brk-medium : '(min-width: 768px)';
+$brk-wide	: '(min-width: 1024px)';

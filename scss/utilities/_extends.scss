@@ -1,0 +1,25 @@
+
+
+%centered {
+	text-align: center;
+}
+
+	
+%clearfix {
+	&:before,
+	&:after {
+		content: ".";
+  		display: block;
+  		height: 0;
+  		overflow: hidden;
+	}
+}
+	
+
+%clearfixBoth {
+	&:after {
+		clear: both;
+	}
+}
+	
+	

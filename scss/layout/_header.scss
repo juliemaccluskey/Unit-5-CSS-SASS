@@ -1,0 +1,95 @@
+/*Header Styles-----------------------------------*/
+
+header {
+	@include text(1.06em, 1.4, normal, $color-text);
+	@extend %clearfix;
+	@extend %clearfixBoth;
+	@extend %centered;
+	margin-top: 1.25em;
+	
+	@media #{$brk-medium} {
+			width: 90%;
+			margin: auto;
+	}
+	
+	@media #{$brk-wide} {
+			width: 95%;
+			max-width: 1285px;
+			padding: 1em;
+	}
+}
+
+#main-nav {
+	
+	@media #{$brk-wide} {
+			float: right;
+			margin-top: 20px;
+	}
+	
+}
+
+#main-nav a {
+	
+	background: $color-nav-background;
+	display: block;
+	
+	@media #{$brk-medium} {
+			display: inline;
+			background: none;
+	}
+}
+
+#main-nav li {
+	margin-top: 9px;
+	line-height: 25px;
+	
+	@media #{$brk-medium} {
+		display: inline-block;
+		padding-right: 20px;
+		padding-left: 20px;
+		margin-bottom: 35px
+	}
+	
+	@media #{$brk-wide} {
+			padding-right: 0;
+	}
+}
+
+header p {
+	margin: 15px auto 35px;
+	
+	@media #{$brk-medium} {
+			text-align: left;
+			float: left;
+			width: 55%;
+			font-size: 1.2em
+	}
+	
+	@media #{$brk-wide} {
+			font-size: 1.6em;
+			width: 45%;
+	}
+}
+
+header img {
+	
+	@media #{$brk-medium} {
+			float: right;
+			width: 40%;
+			margin-top: 17px;
+			margin-bottom: 50px;
+	}
+	
+	@media #{$brk-wide} {
+			clear: both;
+	}
+}
+
+h1 {
+	
+	@media #{$brk-wide} {
+			float: left;
+			font-size: 2em;
+	}
+	
+}
